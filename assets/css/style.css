@@ -1,0 +1,423 @@
+/* color de fondo  */
+body {
+  background-image: radial-gradient(circle at 69.19% 102.72%, #003769 0, #00356b 6.25%, #00336b 12.5%, #00316b 18.75%, #002e69 25%, #1c2b66 31.25%, #2e2763 37.5%, #3a235e 43.75%, #441f59 50%, #4c1a53 56.25%, #53164d 62.5%, #581146 68.75%, #5d0c3f 75%, #600937 81.25%, #610730 87.5%, #620729 93.75%, #620921 100%);
+  
+  
+}
+/* Color TEXTO*/
+*  {
+  color: white; /* Color blanco */
+  font-family: 'Courier New'; /* Fuente ) */
+  text-align: center; /* Centra todo el texto */
+}
+
+/* Estilo base de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Colapsa los bordes de la tabla */
+}
+
+/* Estilo de las celdas */
+th, td {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para las filas pares */
+tr:nth-child(even) {
+  background-color: #007bff; /* Color de fondo para filas pares */
+}
+
+/* Estilo para el encabezado */
+th {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color del texto */
+}
+
+/* Estilos generales para la lista desplegable */
+select {
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  background-color: #f8f8f8; /* Color de fondo */
+  color: #333; /* Color del texto */
+  appearance: none; /* Eliminar el estilo nativo del sistema */
+}
+
+/* Estilos para la flecha desplegable */
+select::-ms-expand {
+  display: none; /* Ocultar la flecha en Internet Explorer */
+}
+
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+  appearance: none; /* Eliminar los botones de incremento y decremento en Chrome y Safari */
+  margin: 0; /* Eliminar el margen */
+}
+
+/* Estilos para cuando la lista desplegable está desplegada */
+select:focus {
+  border-color: #007bff; /* Cambiar el color del borde cuando está enfocado */
+}
+
+/* Estilos para las opciones de la lista desplegable */
+select option {
+  color: black; /* Color del texto de las opciones */
+}
+
+
+
+
+
+
+
+
+/* boton */
+.shadow-effect {
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007bff; /* Color base del botón */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+}
+.shadow-effect:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.39); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+
+
+
+
+
+
+
+/* hora */
+input[type="time"] {
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  background-color: #f8f8f8; /* Color de fondo */
+  color: black; /* Color del texto */
+  font-family: Arial, sans-serif; /* Fuente */
+}
+
+/* Estilos para cuando el input está enfocado */
+input[type="time"]:focus {
+  outline: none; /* Eliminar el contorno de enfoque */
+  border-color: #007bff; /* Cambiar el color del borde cuando está enfocado */
+}
+
+/* formularios */
+.container {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenedor verticalmente */
+  height: 100vh; /* Altura del contenedor igual al 100% del viewport */
+}
+
+
+
+/* formulario */
+form {
+  width: 60%; /* Ancho del formulario */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+form input[type="text"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Margen inferior */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  box-sizing: border-box; /* Incluir el borde en el tamaño total */
+  color: black; /* Color del texto en negro */
+}
+
+form input[type="text"]:focus {
+  outline: none; /* Eliminar el contorno de enfoque */
+  border-color: #007bff; /* Cambiar el color del borde cuando está enfocado */
+}
+
+
+/* Estilos para el contenedor del input de fecha */
+.date-input-container {
+  position: relative;
+}
+
+/* Estilos para el input de fecha */
+.date-input {
+  padding: 8px 40px 8px 8px; /* Ajusta el padding para dejar espacio para el icono */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño de la fuente */
+  width: 70%; /* Ancho completo */
+  color: black; /* Color del texto en negro */
+}
+
+/* Estilos para el icono de calendario */
+.date-icon {
+  position: absolute; /* Posición absoluta para superponer el icono sobre el input */
+  top: 50%; /* Alinea el icono verticalmente en el centro */
+  right: 10px; /* Alinea el icono a la derecha */
+  transform: translateY(-50%); /* Centra verticalmente el icono */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el icono */
+  width: 30px; /* Ajusta el ancho del icono */
+  height: 30px; /* Ajusta la altura del icono */
+}
+
+
+
+/* Estilos para el contenedor del input de número */
+.number-input-container {
+  position: relative;
+}
+
+/*PARA EL MUMERO DE PLAZA */
+.number-input {
+  padding: 8px 40px 8px 8px; /* Ajusta el padding para dejar espacio para el icono */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño de la fuente */
+  width: 93%; /* Ancho completo */
+  color: black; /* Color del texto en negro */
+}
+
+
+/*PARA EL MUMERO DE PLAZA */
+.number-icon {
+  position: absolute; /* Posición absoluta para superponer el icono sobre el input */
+  top: 50%; /* Alinea el icono verticalmente en el centro */
+  right: 10px; /* Alinea el icono a la derecha */
+  transform: translateY(-50%); /* Centra verticalmente el icono */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el icono */
+  width: 30px; /* Ajusta el ancho del icono */
+  height: 30px; /* Ajusta la altura del icono */
+}
+
+
+
+
+
+
+/*CABEZERA  */
+#main-header {
+	background: linear-gradient(to right, #e93838, #5a63ff); /* Degradado de morado a azul */
+	color: white;
+	height: 80px;
+	width: 100%;
+  filter: blur(0.1px); /* Agregar un efecto de difuminado */
+}   
+
+#main-header a {
+	color: white;
+	text-decoration: none;
+	float: left; /* Colocar los enlaces a la izquierda */
+	margin-right: 10px; /* Ajustar el margen derecho entre los enlaces */
+}
+
+#main-header a:hover,
+#main-header a:active {
+	color: #0b76a6;
+}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: right; /* Colocar el logo a la derecha */
+	padding: 15px 20px; /* Ajustar el espacio alrededor del logo */
+	text-decoration: none;
+	color: white; /* Cambiar el color del logo a blanco */
+}
+
+#logo-header:hover {
+	color: #0b76a6;
+}
+
+#logo-header .site-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+#logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #999;
+}
+
+
+
+/* PIE DE PAGINA  */
+
+
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col{
+  min-width: 250px;
+  color:#f2f2f2f2;
+  font-family: poppins;
+  padding:0 2rem;
+}
+.col .logo img {
+  width: 100px;
+  margin-bottom: 25px;
+  border-radius: 60%; /* Para hacer el icono redondo */
+  filter: blur(2px); /* Para aplicar un efecto de desenfoque */
+}
+.col h3{
+  color:#ff014fff;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.col h3::after{
+  content: '';
+  height:3px;
+  width:0px;
+  background-color: #ff014fff;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+  width:30px
+}
+.col .social a i{
+  color:#ff014fff;
+  margin-top:2rem;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+.col .social a i:hover{
+  transform: scale(1.5);
+  filter:grayscale(25);
+}
+.col .links a{
+  display: block;
+  text-decoration: none;
+  color:#f2f2f2;
+  margin-bottom: 5px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.col .links a::before{
+  content:'';
+  height: 16px;
+  width:3px;
+  position: absolute;
+  top:5px;
+  left:-10px;
+  background-color: #ff014fff;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.col .links a:hover::before{
+  opacity: 1;
+}
+.col .links a:hover{
+  transform: translateX(-8px);
+  color:#ff014fff;
+}
+.col .contact-details{
+  display: inline-flex;
+  justify-content: space-between;
+}
+.col .contact-details i{
+  margin-right:15px;
+}
+.row .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:2rem 0;
+}
+.row .form input{
+  background-color: #1a1c20ff;
+  border:0;
+  outline:none;
+  padding:14px 20px;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form button{
+  padding:14px 20px;
+  border:0;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ff014fff;
+}
+
+
+@media(max-width:900px)
+{
+.row{
+  flex-direction: column;
+}
+.col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+}
+@media(max-width:768px)
+{
+.row{
+  flex-direction: column;
+}
+.col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+}
+
+
+
+/* Estilo para el contenedor del input de archivo */
+.file-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para el botón de selección de archivos */
+.file-input-button {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: rgb(252, 66, 66); /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Borde del botón */
+  border-radius: 5px; /* Radio de borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el texto que muestra el nombre del archivo seleccionado */
+.file-input-text {
+  margin-left: 10px; /* Espaciado a la izquierda del texto */
+}
